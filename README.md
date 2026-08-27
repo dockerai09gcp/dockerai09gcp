@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="assets/squirrel.svg" alt="A squirrel holding an acorn" width="300">
+  <img src="assets/squirrel-chase.svg" alt="A squirrel lunging for an acorn that keeps getting away" width="420">
 </div>
 
 ### Hi, I'm dockerai09gcp 👋
