@@ -2,12 +2,12 @@
   <title>Agentic data platform on GCP</title>
   <style>
     .lbl   { font-family: ui-sans-serif, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; }
-    .ttl   { font-size: 19px; font-weight: 700; fill: #fff; }
-    .sub   { font-size: 12px; fill: #fff; opacity: .82; letter-spacing: .4px; }
-    .pill  { font-size: 14px; font-weight: 600; fill: #fff; }
-    .bar   { font-size: 13px; font-weight: 600; fill: #fff; letter-spacing: .3px; }
-    .kick  { font-size: 13px; font-weight: 600; fill: #8B949E; letter-spacing: 2.2px; }
-    .edge  { font-size: 11px; fill: #8B949E; letter-spacing: 1px; }
+    .ttl   { font-size: 26px; font-weight: 700; fill: #fff; }
+    .sub   { font-size: 17px; fill: #fff; opacity: .82; letter-spacing: .4px; }
+    .pill  { font-size: 19px; font-weight: 600; fill: #fff; }
+    .bar   { font-size: 18px; font-weight: 600; fill: #fff; letter-spacing: .3px; }
+    .kick  { font-size: 17px; font-weight: 600; fill: #8B949E; letter-spacing: 2.2px; }
+    .edge  { font-size: 15px; fill: #8B949E; letter-spacing: 1px; }
 
     .packet { transform-box: view-box; animation: flow 5s linear infinite; }
     .p2 { animation-delay: -1.25s } .p3 { animation-delay: -2.5s } .p4 { animation-delay: -3.75s }
@@ -23,7 +23,7 @@
 
     .ring { stroke: #FBBC04; stroke-width: 3; fill: none; opacity: 0; animation: glow 3.6s ease-in-out infinite; }
     .r2 { animation-delay: 1.2s } .r3 { animation-delay: 2.4s }
-    @keyframes glow { 0%,26% { opacity: 1 } 34%,100% { opacity: 0 } }
+    @keyframes glow { 0%,24% { opacity: 1 } 30%,100% { opacity: 0 } }
 
     @media (prefers-reduced-motion: reduce) {
       .packet, .dash, .ring { animation: none }
@@ -71,24 +71,24 @@
   <!-- pipeline stages -->
   <g>
     <rect x="40"  y="180" width="150" height="80" rx="11" fill="#5F6B7A"/>
-    <text class="lbl ttl" x="115" y="216" text-anchor="middle">Sources</text>
-    <text class="lbl sub" x="115" y="236" text-anchor="middle">Pub/Sub · GCS</text>
+    <text class="lbl ttl" x="115" y="214" text-anchor="middle">Sources</text>
+    <text class="lbl sub" x="115" y="239" text-anchor="middle">Pub/Sub · GCS</text>
 
     <rect x="230" y="180" width="150" height="80" rx="11" fill="#4285F4"/>
-    <text class="lbl ttl" x="305" y="216" text-anchor="middle">Cloud Run</text>
-    <text class="lbl sub" x="305" y="236" text-anchor="middle">INGEST</text>
+    <text class="lbl ttl" x="305" y="214" text-anchor="middle">Cloud Run</text>
+    <text class="lbl sub" x="305" y="239" text-anchor="middle">INGEST</text>
 
     <rect x="420" y="180" width="150" height="80" rx="11" fill="#34A853"/>
-    <text class="lbl ttl" x="495" y="216" text-anchor="middle">Composer</text>
-    <text class="lbl sub" x="495" y="236" text-anchor="middle">ORCHESTRATE</text>
+    <text class="lbl ttl" x="495" y="214" text-anchor="middle">Composer</text>
+    <text class="lbl sub" x="495" y="239" text-anchor="middle">ORCHESTRATE</text>
 
     <rect x="610" y="180" width="150" height="80" rx="11" fill="#EA4335"/>
-    <text class="lbl ttl" x="685" y="216" text-anchor="middle">dbt</text>
-    <text class="lbl sub" x="685" y="236" text-anchor="middle">TRANSFORM</text>
+    <text class="lbl ttl" x="685" y="214" text-anchor="middle">dbt</text>
+    <text class="lbl sub" x="685" y="239" text-anchor="middle">TRANSFORM</text>
 
     <rect x="800" y="180" width="150" height="80" rx="11" fill="#1967D2"/>
-    <text class="lbl ttl" x="875" y="216" text-anchor="middle">BigQuery</text>
-    <text class="lbl sub" x="875" y="236" text-anchor="middle">WAREHOUSE</text>
+    <text class="lbl ttl" x="875" y="214" text-anchor="middle">BigQuery</text>
+    <text class="lbl sub" x="875" y="239" text-anchor="middle">WAREHOUSE</text>
   </g>
 
   <!-- substrate layers -->
